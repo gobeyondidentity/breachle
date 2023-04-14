@@ -112,6 +112,14 @@ const breaches = [
 
 ];
 
+const companyList = document.getElementById("companyList");
+const companyNames = breaches.map(breach => breach.name);
+companyNames.forEach(name => {
+  const option = document.createElement("option");
+  option.value = name;
+  companyList.appendChild(option);
+});
+
 let currentBreach;
 let clueIndex = 0;
 
@@ -144,15 +152,28 @@ function checkGuess() {
     const userGuess = document.getElementById("userGuess").value.trim().toLowerCase();
     if (userGuess === currentBreach.name.toLowerCase()) {
         showRestartButton();
-        alert("Congratulations! You guessed correctly.");
+        document.getElementById("userGuess").classList.add("correct-guess"); // Add CSS class
+        setTimeout(() => {
+            document.getElementById("userGuess").classList.remove("correct-guess"); // Remove CSS class after 500ms
+        }, 200);
+        const clueList = document.getElementById("clueList");
+        const listItem = document.createElement("li");
+        listItem.textContent = `You won! The correct answer is "${currentBreach.name}".`;
+        listItem.classList.add("win-message");
+        clueList.insertBefore(listItem, clueList.firstChild);
     } else {
         if (clueIndex === currentBreach.clues.length) { // Update this line
             showRestartButton();
         }
         if (clueIndex <= currentBreach.clues.length) {
             displayClue();
+            document.getElementById("userGuess").classList.add("wrong-guess"); // Add CSS class
+            setTimeout(() => {
+                document.getElementById("userGuess").classList.remove("wrong-guess"); // Remove CSS class after 200ms
+            }, 200);
         }
     }
+    document.getElementById("userGuess").value = ""; // Clear input contents
 }
 
 

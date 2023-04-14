@@ -81,7 +81,18 @@ button {
     margin-top: 10px;
 }
 
+.wrong-guess {
+    background-color: #ffcdd2; /* Red */
+}
 
+.correct-guess {
+    background-color: #c8e6c9; /* Green */
+}
+
+.win-message {
+    font-weight: bold;
+    color: green;
+}
 
 
 
