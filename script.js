@@ -112,13 +112,8 @@ const breaches = [
 
 ];
 
-const companyList = document.getElementById("companyList");
-const companyNames = breaches.map(breach => breach.name);
-companyNames.forEach(name => {
-  const option = document.createElement("option");
-  option.value = name;
-  companyList.appendChild(option);
-});
+const input = document.getElementById("userGuess");
+input.addEventListener("input", autocomplete);
 
 let currentBreach;
 let clueIndex = 0;
@@ -150,11 +145,13 @@ function displayClue() {
 
 function checkGuess() {
     const userGuess = document.getElementById("userGuess").value.trim().toLowerCase();
+    const companyList = document.getElementById("companyList");
+    companyList.innerHTML = ""; // Clear the datalist
     if (userGuess === currentBreach.name.toLowerCase()) {
         showRestartButton();
         document.getElementById("userGuess").classList.add("correct-guess"); // Add CSS class
         setTimeout(() => {
-            document.getElementById("userGuess").classList.remove("correct-guess"); // Remove CSS class after 500ms
+            document.getElementById("userGuess").classList.remove("correct-guess"); // Remove CSS class after 200ms
         }, 200);
         const clueList = document.getElementById("clueList");
         const listItem = document.createElement("li");
@@ -162,10 +159,10 @@ function checkGuess() {
         listItem.classList.add("win-message");
         clueList.insertBefore(listItem, clueList.firstChild);
     } else {
-        if (clueIndex === currentBreach.clues.length) { // Update this line
+        if (clueIndex === currentBreach.clues.length) {
             showRestartButton();
-        }
-        if (clueIndex <= currentBreach.clues.length) {
+            document.getElementById("userGuess").value = ""; // Clear input contents
+        } else if (clueIndex < currentBreach.clues.length) {
             displayClue();
             document.getElementById("userGuess").classList.add("wrong-guess"); // Add CSS class
             setTimeout(() => {
@@ -175,6 +172,27 @@ function checkGuess() {
     }
     document.getElementById("userGuess").value = ""; // Clear input contents
 }
+
+
+function autocomplete() {
+    const input = document.getElementById("userGuess");
+    const inputValue = input.value.trim();
+    if (inputValue.length < 3) {
+        return; // Don't show autocomplete options if there are less than 3 letters
+    }
+    const filter = inputValue.toLowerCase().substring(0, 3); // Only match first 3 letters
+    const matches = breaches.filter((breach) =>
+        breach.name.toLowerCase().includes(filter)
+    );
+    const datalist = document.getElementById("companyList");
+    datalist.innerHTML = "";
+    matches.forEach((breach) => {
+        const option = document.createElement("option");
+        option.value = breach.name;
+        datalist.appendChild(option);
+    });
+}
+
 
 
 function showRestartButton() {
