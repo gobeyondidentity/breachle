@@ -1,6 +1,6 @@
 body {
     font-family: Arial, sans-serif;
-    max-width: 800px;
+    max-width: 1000px;
     margin: 0 auto;
     padding: 20px;
     background-color: #f4f4f4;
@@ -94,5 +94,8 @@ button {
     color: green;
 }
 
+ .gpt {
+    font-size: 10px;
+ }
 
 
