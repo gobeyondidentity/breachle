@@ -126,7 +126,7 @@ const breaches = [
       "Athletic apparel company",
       "Usernames, email addresses, and passwords were exposed",
       "The breach affected around 150 million users of the company's app",
-      "Under Armour urged all users to change their passwords"
+      "Urged all users to change their passwords"
     ]
   },
   {
