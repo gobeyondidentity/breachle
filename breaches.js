@@ -42,7 +42,7 @@ const breaches = [
   {
       name: "Adult FriendFinder",
       clues: [
-          "October 2016, United States economic impact",
+          "October 2016, United States",
           "Online dating and adult entertainment platform",
           "Affected around 412 million user accounts",
           "Exposed usernames, passwords, and more",
