@@ -1,0 +1,87 @@
+body {
+    font-family: Arial, sans-serif;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+
+h1 {
+    color: #333;
+    font-size: 2rem;
+}
+
+input#userGuess {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    margin-bottom: 10px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #666;
+}
+
+p#clue {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #555;
+    margin-top: 20px;
+}
+
+img#logo {
+    display: block;
+    max-width: 30px;
+    margin: 0 auto 20px auto;
+}
+
+ul#clueList {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+ul#clueList li {
+    font-size: 18px;
+    margin-bottom: 10px;
+    padding-left: 20px;
+    background: none; /* Update this line */
+    border: 1px solid #ccc;
+    height: 50px;
+    line-height: 50px;
+}
+
+ul#clueList li:first-child {
+    font-weight: bold;
+    height: auto;
+    border: none;
+    border: 1px solid #ccc;
+    height: 50px;
+    line-height: 50px;
+}
+
+#userGuess {
+    margin-bottom: 10px;
+}
+
+button {
+    margin-top: 10px;
+}
+
+
+
+
+
