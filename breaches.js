@@ -42,7 +42,7 @@ const breaches = [
   {
       name: "Adult FriendFinder",
       clues: [
-          "October 2016, United States, Unknown economic impact",
+          "October 2016, United States economic impact",
           "Online dating and adult entertainment platform",
           "Affected around 412 million user accounts",
           "Exposed usernames, passwords, and more",
@@ -142,7 +142,7 @@ const breaches = [
   {
     name: "LinkedIn",
     clues: [
-      "2012, Global, Unknown",
+      "2012, Global",
       "Professional networking site",
       "Over 160 million user email addresses and passwords were exposed",
       "The company faced multiple lawsuits as a result of the breach",
@@ -152,7 +152,7 @@ const breaches = [
   {
     name: "Wawa",
     clues: [
-      "December 2019, United States, Unknown",
+      "December 2019, United States",
       "Convenience store chain",
       "Customer payment card information was exposed",
       "The breach was the result of malware on the company's payment processing servers",
@@ -162,7 +162,7 @@ const breaches = [
   {
     name: "T-Mobile",
     clues: [
-      "August 2021, United States, Unknown",
+      "August 2021, United States",
       "Wireless carrier",
       "Personal information of over 50 million customers was exposed",
       "The breach was the result of a vulnerability in the company's servers",
@@ -182,7 +182,7 @@ const breaches = [
   {
     name: "JPMorgan Chase",
     clues: [
-      "2014, United States, Unknown",
+      "2014, United States",
       "Bank holding company",
       "76 million households and 7 million small businesses were affected",
       "The company spent over $250 million on the fallout from the breach",
@@ -202,7 +202,7 @@ const breaches = [
   {
     name: "Microsoft",
     clues: [
-      "2020, Global, Unknown",
+      "2020, Global",
       "Technology company",
       "Hackers gained access to source code and other sensitive data",
       "The company initially downplayed the severity of the breach",
@@ -222,12 +222,122 @@ const breaches = [
   {
     name: "Cloudflare",
     clues: [
-      "2017, Global, Unknown",
+      "2017, Global",
       "Internet security company",
       "Customer data was exposed, including passwords and encryption keys",
       "The company faced criticism for the slow response to the breach",
       "The breach was the result of a software bug in the company's code"
     ]
-  }
+  },
+  {
+    name: "Capital One",
+    clues: [
+      "2019, United States, 106 million",
+      "Financial services company",
+      "Customer data was exposed, including names, addresses, and Social Security numbers",
+      "The breach was the result of a vulnerability in the company's web application firewall",
+      "The hacker responsible for the breach was arrested and charged"
+    ]
+  },
+  {
+    name: "Macy's",
+    clues: [
+      "2018, United States",
+      "Retail company",
+      "Customer data was exposed, including names and credit card numbers",
+      "The breach was the result of a vulnerability in the company's website",
+      "The company faced criticism for its slow response to the breach"
+    ]
+  },
+  {
+    name: "The Home Shopping Network",
+    clues: [
+      "2017, United States",
+      "Television network and retail company",
+      "Customer data was exposed, including names and email addresses",
+      "The breach was the result of a vulnerability in the company's website",
+      "The company faced criticism for its slow response to the breach"
+    ]
+  },
+  {
+    name: "Twitter",
+    clues: [
+      "2020, Global",
+      "Social media company",
+      "Hackers gained access to high-profile accounts and used them to promote a Bitcoin scam",
+      "The company faced criticism for its security measures",
+      "The breach was the result of a social engineering attack on Twitter employees"
+    ]
+  },
+  {
+    name: "Dominion National",
+    clues: [
+      "2019, United States",
+      "Dental and vision insurance company",
+      "Customer data was exposed, including names and Social Security numbers",
+      "The breach was the result of a vulnerability in the company's website",
+      "The company faced criticism for its slow response to the breach"
+    ]
+  },
+  {
+  name: "CD Projekt Red",
+    clues: [
+      "February 2021, Poland",
+      "Video game company",
+      "Hackers gained access to the company's internal network and stole source code for several games",
+      "The company faced criticism for its handling of the breach",
+      "The incident highlighted the growing threat of cyberattacks against the gaming industry"
+    ]
+  },
+  {
+    name: "Epsilon",
+    clues: [
+      "April 2011, United States",
+      "Marketing services company",
+      "Customer data was exposed, including names and email addresses",
+      "The breach affected numerous major companies, including JPMorgan Chase and Best Buy",
+      "The incident highlighted the risks associated with the consolidation of customer data in third-party service providers"
+    ]
+  },
+  {
+    name: "Panera Bread",
+    clues: [
+      "April 2018, United States",
+      "Restaurant chain",
+      "Customer data was exposed, including names, email addresses, and credit card numbers",
+      "The breach was the result of a vulnerability in the company's website",
+      "The company faced criticism for its handling of the breach"
+    ]
+  },
+  {
+    name: "Verkada",
+    clues: [
+      "March 2021, Global",
+      "Surveillance camera company",
+      "Hackers gained access to the company's network and were able to view live feeds from customers' cameras",
+      "The incident raised concerns about the security of internet-connected devices",
+      "The company faced criticism for its handling of the breach"
+    ]
+  },
+  {
+  name: "Cambridge Analytica",
+    clues: [
+      "March 2018, United Kingdom",
+      "Political consulting firm",
+      "User data from Facebook was obtained without users' consent and used for political advertising purposes",
+      "The incident raised concerns about the use of personal data in political campaigns",
+      "The company faced criticism for its handling of the data and subsequent investigations"
+    ]
+  },
+  {
+  name: "Norsk Hydro",
+    clues: [
+      "March 2019, Norway, $70 million",
+      "Aluminum producer",
+      "The company's network was attacked with ransomware, disrupting operations",
+      "The company refused to pay the ransom and instead focused on restoring its systems",
+      "The incident highlighted the importance of cybersecurity for critical infrastructure"
+    ]
+  },
 ]
 
