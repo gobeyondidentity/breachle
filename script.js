@@ -160,6 +160,7 @@ function checkGuess() {
         clueList.insertBefore(listItem, clueList.firstChild);
     } else {
         if (clueIndex === currentBreach.clues.length) {
+            displayClue();
             showRestartButton();
             document.getElementById("userGuess").value = ""; // Clear input contents
         } else if (clueIndex < currentBreach.clues.length) {
