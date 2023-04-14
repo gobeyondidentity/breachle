@@ -266,7 +266,7 @@ const breaches = [
       "Social media company",
       "Hackers gained access to high-profile accounts and used them to promote a Bitcoin scam",
       "The company faced criticism for its security measures",
-      "The breach was the result of a social engineering attack on Twitter employees"
+      "The breach was the result of a social engineering attack on employees"
     ]
   },
   {
