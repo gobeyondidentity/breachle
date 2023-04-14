@@ -2,15 +2,18 @@ const input = document.getElementById("userGuess");
 input.addEventListener("input", autocomplete);
 
 let currentBreach;
+let breachIndex = 0;
 let clueIndex = 0;
 
 function startGame() {
-    currentBreach = getRandomBreach();
-    displayClue();
-}
+    // Shuffle the breaches array
+    for (let i = breaches.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [breaches[i], breaches[j]] = [breaches[j], breaches[i]];
+    }
 
-function getRandomBreach() {
-    return breaches[Math.floor(Math.random() * breaches.length)];
+    currentBreach = breaches[breachIndex];
+    displayClue();
 }
 
 function displayClue() {
@@ -86,10 +89,22 @@ function showRestartButton() {
     document.getElementById("restartButton").style.display = "block";
     document.querySelector("button[onclick='checkGuess()']").disabled = true; // Add this line
 }
+function hideRestartButton() {
+    document.getElementById("restartButton").style.display = "none";
+    document.querySelector("button[onclick='checkGuess()']").disabled = false; // Add this line
+}
 
 
 function restartGame() {
-    location.reload();
+    hideRestartButton();
+    currentBreach = breaches[breachIndex];
+    breachIndex++;
+    const companyList = document.getElementById("companyList");
+    companyList.innerHTML = ""; // Clear the datalist
+    const clueList = document.getElementById("clueList");
+    clueList.innerHTML = ""; // Clear the clueList
+    clueIndex = 0
+    displayClue();
 }
 
 document.getElementById("userGuess").addEventListener("keyup", function (event) {

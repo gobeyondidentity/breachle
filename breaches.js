@@ -339,5 +339,45 @@ const breaches = [
       "The incident highlighted the importance of cybersecurity for critical infrastructure"
     ]
   },
+  {
+  name: "Codecov",
+    clues: [
+      "April 2021, Global",
+      "Code coverage platform",
+      "Hackers gained access to the company's code and modified it to steal sensitive data from users",
+      "The breach affected multiple major companies and organizations",
+      "The incident raised concerns about the security of third-party software and the potential for supply chain attacks"
+    ]
+  },
+  {
+  name: "Aetna",
+    clues: [
+      "July 2017, United States, $17 million",
+      "Health insurance company",
+      "The company sent letters to around 12,000 customers with HIV, revealing their condition",
+      "The incident resulted in a settlement with the affected customers and the implementation of new privacy measures",
+      "The breach highlighted the risks of mishandling sensitive health information"
+      ]
+    },
+  {
+  name: "Deloitte",
+  clues: [
+    "September 2017, Global",
+    "Professional services firm",
+    "Hackers gained access to the company's email system and confidential client data",
+    "The breach affected multiple major companies and organizations",
+    "The incident raised concerns about the security of professional services firms and the potential for third-party data breaches"
+    ]
+  },
+  {
+  name: "Razer",
+    clues: [
+      "August 2020, Global",
+      "Gaming hardware company",
+      "Sensitive customer data was exposed on the company's server due to a misconfigured database",
+      "The incident affected around 100,000 customers",
+      "The company apologized for the breach and offered free identity protection services to affected customers"
+    ]
+  }
 ]
 
